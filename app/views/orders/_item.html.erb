@@ -1,0 +1,15 @@
+
+      
+<h4>
+<%=  item.product.name %>
+</h4> 
+<%= image_tag item.product.image.thumb.url , alt: item.product.name %> 
+<p>
+<%= item.product.description %>
+</p>
+
+
+
+<h4>quantity</h4><%= item.product.quantity %>
+<h4>price</h4><%= humanized_money_with_symbol item.product.price %>
+<h4>email</h4><%= @order.email %>
