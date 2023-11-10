@@ -34,8 +34,9 @@ RSpec.describe Product, type: :model do
         @product = Product.new(name: "test_name", description: "test description", "price_cents": 5241, "quantity": 5, "category_id": nil)
         #@product.save
         expect(@product).to_not be_valid
-        expect(@product.errors.full_messages).to include "Category must exist "
+        expect(@product.errors.full_messages).to include "Category must exist"
       end
+      
   
     end
   
